@@ -14,7 +14,7 @@ public class SnakeCamelUtil {
 	public static String camelToSnakecase(String camelcase) {
 		StringBuilder sb = new StringBuilder();
 		int j = 0;
-		for (int i = 0; i < camelcase.length(); i++) {
+		for (int i = 0; i < camelcase.length()-1; i++) {
 			char c = camelcase.charAt(i);
 			if (Character.isUpperCase(c)) {
 				sb.append(camelcase.substring(j, i));
